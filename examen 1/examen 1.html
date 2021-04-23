@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Examen</title>
+<style>
+    .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+div {
+  width: 400px;
+  height: 400px;
+  background-image: url(https://neliosoftware.com/es/wp-content/uploads/sites/3/2018/07/aziz-acharki-549137-unsplash-1200x775.jpg);
+  transition: width 2s;
+}
+
+div:hover {
+  width: 600px;
+}
+body {
+          background-color: lightgreen;
+        }
+        
+        @media only screen and (max-width: 600px) {
+          body {
+            background-color: lightblue;
+        }
+            img{display:none;
+                
+        }
+        }
+</style>
+<script>
+  alert("hola buenos dias")
+  document.write("esto se escribe en la pagina")
+</script>
+</head>
+<body>
+    <h1>Examen</h1>
+
+<p>Hola</p>
+
+<div class="grid-container">
+  <div class="item1">Antonio Álvarez Martín</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+<footer>
+<h3 onclick="alert('hola soy yo')"></h3>
+        <h4 onclick="alert('yo no tocaria ahi jeje')">esto es un titulo</h4>
+        <button>
+            <a href="https://ticantonioalvarez.blogspot.com">Mi blog xd</a>
+        </button>
+
+</html>
